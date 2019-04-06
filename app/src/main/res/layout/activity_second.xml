@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/editTextPhone"
+            android:layout_width="229dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:ems="10"
+            android:inputType="phone" />
+
+        <EditText
+            android:id="@+id/editTextWeb"
+            android:layout_width="229dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/editTextPhone"
+            android:layout_centerVertical="true"
+            android:textSize="14sp" />
+
+        <ImageButton
+            android:id="@+id/imageButtonPhone"
+            android:layout_width="61dp"
+            android:layout_height="55dp"
+            android:layout_alignBottom="@+id/editTextPhone"
+
+            android:layout_alignParentRight="true"
+            android:background="@android:drawable/ic_menu_call" />
+
+        <ImageButton
+            android:id="@+id/imageButtonWeb"
+            android:layout_width="52dp"
+            android:layout_height="41dp"
+            android:layout_alignStart="@+id/imageButtonPhone"
+            android:layout_alignBottom="@+id/editTextWeb"
+            android:layout_marginStart="4dp"
+            app:srcCompat="@android:drawable/ic_menu_view" />
+
+        <TextView
+            android:id="@+id/textViewHellow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextWeb"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="70dp"
+            android:text="TextView" />
+
+        <ImageButton
+            android:id="@+id/imageButtonEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewHellow"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@android:drawable/ic_dialog_email" />
+
+        <ImageButton
+            android:id="@+id/imageButtonFastEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/textViewHellow"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/imageButtonEmail"
+            app:srcCompat="@android:drawable/sym_action_email" />
+
+        <ImageButton
+            android:id="@+id/imageButtonContacts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageButtonFastEmail"
+            android:layout_marginStart="30dp"
+            android:layout_toEndOf="@+id/imageButtonFastEmail"
+            app:srcCompat="@android:drawable/ic_menu_myplaces" />
+
+        <ImageButton
+            android:id="@+id/imageButtonDialCall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageButtonEmail"
+            android:layout_marginStart="30dp"
+            android:layout_toEndOf="@+id/imageButtonContacts"
+            app:srcCompat="@android:drawable/ic_menu_call" />
+
+    </RelativeLayout>
+
+
+    <ImageButton
+        android:id="@+id/buttonCamara"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorAccent"
+        android:src="@android:drawable/ic_menu_camera" />
+</RelativeLayout>
